@@ -1,0 +1,368 @@
+[
+    {
+        "label": "runpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "runpy",
+        "description": "runpy",
+        "detail": "runpy",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "getpreferredencoding",
+        "importPath": "locale",
+        "description": "locale",
+        "isExtraImport": true,
+        "detail": "locale",
+        "documentation": {}
+    },
+    {
+        "label": "Queue",
+        "importPath": "queue",
+        "description": "queue",
+        "isExtraImport": true,
+        "detail": "queue",
+        "documentation": {}
+    },
+    {
+        "label": "Popen",
+        "importPath": "subprocess",
+        "description": "subprocess",
+        "isExtraImport": true,
+        "detail": "subprocess",
+        "documentation": {}
+    },
+    {
+        "label": "PIPE",
+        "importPath": "subprocess",
+        "description": "subprocess",
+        "isExtraImport": true,
+        "detail": "subprocess",
+        "documentation": {}
+    },
+    {
+        "label": "STDOUT",
+        "importPath": "subprocess",
+        "description": "subprocess",
+        "isExtraImport": true,
+        "detail": "subprocess",
+        "documentation": {}
+    },
+    {
+        "label": "TimeoutExpired",
+        "importPath": "subprocess",
+        "description": "subprocess",
+        "isExtraImport": true,
+        "detail": "subprocess",
+        "documentation": {}
+    },
+    {
+        "label": "pwd",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pwd",
+        "description": "pwd",
+        "detail": "pwd",
+        "documentation": {}
+    },
+    {
+        "label": "selectors",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "selectors",
+        "description": "selectors",
+        "detail": "selectors",
+        "documentation": {}
+    },
+    {
+        "label": "signal",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "signal",
+        "description": "signal",
+        "detail": "signal",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "IRCBot",
+        "importPath": "pyrcb",
+        "description": "pyrcb",
+        "isExtraImport": true,
+        "detail": "pyrcb",
+        "documentation": {}
+    },
+    {
+        "label": "CommandRunner",
+        "importPath": "command",
+        "description": "command",
+        "isExtraImport": true,
+        "detail": "command",
+        "documentation": {}
+    },
+    {
+        "label": "docopt",
+        "importPath": "docopt",
+        "description": "docopt",
+        "isExtraImport": true,
+        "detail": "docopt",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "getpass",
+        "importPath": "getpass",
+        "description": "getpass",
+        "isExtraImport": true,
+        "detail": "getpass",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "threading",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "threading",
+        "description": "threading",
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len('Scripts') - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = '' or os.path.basename(base)\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in '..\\\\Lib\\\\site-packages'.split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "base = bin_dir[: -len('Scripts') - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = '' or os.path.basename(base)\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in '..\\\\Lib\\\\site-packages'.split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if '' else path)",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = '' or os.path.basename(base)\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in '..\\\\Lib\\\\site-packages'.split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if '' else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = '' or os.path.basename(base)\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in '..\\\\Lib\\\\site-packages'.split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if '' else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV_PROMPT\"]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV_PROMPT\"] = '' or os.path.basename(base)\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in '..\\\\Lib\\\\site-packages'.split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if '' else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in '..\\\\Lib\\\\site-packages'.split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if '' else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "CommandRunner",
+        "kind": 6,
+        "importPath": "command",
+        "description": "command",
+        "peekOfCode": "class CommandRunner:\n    def __init__(self, timeout, cwd=None, user=None):\n        self.user = user\n        self.cwd = cwd\n        self.timeout = timeout\n        self.shell = [\"/bin/bash\", \"-c\"]\n        self.output_limit = 100000\n        self.path = \":\".join([\n            \"/bin\",\n            \"/usr/bin\",",
+        "detail": "command",
+        "documentation": {}
+    },
+    {
+        "label": "setid",
+        "kind": 2,
+        "importPath": "command",
+        "description": "command",
+        "peekOfCode": "def setid(uid, gid):\n    assert uid != 0\n    assert gid != 0\n    def result():\n        os.setgid(uid)\n        os.setuid(gid)\n    return result",
+        "detail": "command",
+        "documentation": {}
+    },
+    {
+        "label": "Shellbot",
+        "kind": 6,
+        "importPath": "shellbot",
+        "description": "shellbot",
+        "peekOfCode": "class Shellbot(IRCBot):\n    def __init__(self, lines, timeout, prefix, queries, user, cwd, **kwargs):\n        super(Shellbot, self).__init__(**kwargs)\n        self.max_lines = lines\n        self.prefix = prefix\n        self.allow_queries = queries\n        self.runner = CommandRunner(timeout, cwd, user)\n        self._runner_thread = threading.Thread(\n            target=self.runner.loop, daemon=True)\n        self._runner_thread.start()",
+        "detail": "shellbot",
+        "documentation": {}
+    },
+    {
+        "label": "remove_escape_codes",
+        "kind": 2,
+        "importPath": "shellbot",
+        "description": "shellbot",
+        "peekOfCode": "def remove_escape_codes(string):\n    return re.sub(r\"\\x1b.*?[a-zA-Z]\", \"\", string)\ndef replace_tabs(string):\n    result = \"\"\n    split = string.split(\"\\t\")\n    for s in split[:-1]:\n        result += s + \" \" * (8 - (len(s) % 8))\n    return result + split[-1]\ndef stderr(*args, **kwargs):\n    print(*args, file=sys.stderr, **kwargs)",
+        "detail": "shellbot",
+        "documentation": {}
+    },
+    {
+        "label": "replace_tabs",
+        "kind": 2,
+        "importPath": "shellbot",
+        "description": "shellbot",
+        "peekOfCode": "def replace_tabs(string):\n    result = \"\"\n    split = string.split(\"\\t\")\n    for s in split[:-1]:\n        result += s + \" \" * (8 - (len(s) % 8))\n    return result + split[-1]\ndef stderr(*args, **kwargs):\n    print(*args, file=sys.stderr, **kwargs)\ndef log(*args, **kwargs):\n    print(datetime.now().strftime(\"[%Y-%m-%d %H:%M:%S]\"), *args, **kwargs)",
+        "detail": "shellbot",
+        "documentation": {}
+    },
+    {
+        "label": "stderr",
+        "kind": 2,
+        "importPath": "shellbot",
+        "description": "shellbot",
+        "peekOfCode": "def stderr(*args, **kwargs):\n    print(*args, file=sys.stderr, **kwargs)\ndef log(*args, **kwargs):\n    print(datetime.now().strftime(\"[%Y-%m-%d %H:%M:%S]\"), *args, **kwargs)\ndef start(bot, args, password):\n    bot.connect(\n        args[\"<host>\"], int(args[\"<port>\"]),\n        use_ssl=args[\"--ssl\"], ca_certs=args[\"--cafile\"])\n    if password:\n        bot.password(password)",
+        "detail": "shellbot",
+        "documentation": {}
+    },
+    {
+        "label": "log",
+        "kind": 2,
+        "importPath": "shellbot",
+        "description": "shellbot",
+        "peekOfCode": "def log(*args, **kwargs):\n    print(datetime.now().strftime(\"[%Y-%m-%d %H:%M:%S]\"), *args, **kwargs)\ndef start(bot, args, password):\n    bot.connect(\n        args[\"<host>\"], int(args[\"<port>\"]),\n        use_ssl=args[\"--ssl\"], ca_certs=args[\"--cafile\"])\n    if password:\n        bot.password(password)\n    bot.register(args[\"-n\"])\n    for channel in args[\"<channel>\"]:",
+        "detail": "shellbot",
+        "documentation": {}
+    },
+    {
+        "label": "start",
+        "kind": 2,
+        "importPath": "shellbot",
+        "description": "shellbot",
+        "peekOfCode": "def start(bot, args, password):\n    bot.connect(\n        args[\"<host>\"], int(args[\"<port>\"]),\n        use_ssl=args[\"--ssl\"], ca_certs=args[\"--cafile\"])\n    if password:\n        bot.password(password)\n    bot.register(args[\"-n\"])\n    for channel in args[\"<channel>\"]:\n        bot.join(channel)\n    bot.listen()",
+        "detail": "shellbot",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "shellbot",
+        "description": "shellbot",
+        "peekOfCode": "def main(argv):\n    args = docopt(__doc__, argv=argv[1:], version=__version__)\n    if args[\"-u\"] and os.geteuid() != 0:\n        stderr('Must be run as root with \"-u\".')\n        return\n    if not args[\"-u\"] and os.geteuid() == 0:\n        stderr('WARNING: Running as root without \"-u\".')\n    password = None\n    if args[\"--password\"]:\n        stderr(\"Password: \", end=\"\", flush=True)",
+        "detail": "shellbot",
+        "documentation": {}
+    },
+    {
+        "label": "__version__",
+        "kind": 5,
+        "importPath": "shellbot",
+        "description": "shellbot",
+        "peekOfCode": "__version__ = \"0.2.24\"\n# If modified, replace the source URL with one to the modified version.\nHELP_MESSAGE = \"\"\"\\\nshellbot v{0}\nSource: https://github.com/taylordotfish/shellbot (AGPLv3 or later)\nUse in private queries is {{0}}.\nTo run a command, send \"{{1}} <command>\".\n\"\"\".format(__version__)\nclass Shellbot(IRCBot):\n    def __init__(self, lines, timeout, prefix, queries, user, cwd, **kwargs):",
+        "detail": "shellbot",
+        "documentation": {}
+    },
+    {
+        "label": "HELP_MESSAGE",
+        "kind": 5,
+        "importPath": "shellbot",
+        "description": "shellbot",
+        "peekOfCode": "HELP_MESSAGE = \"\"\"\\\nshellbot v{0}\nSource: https://github.com/taylordotfish/shellbot (AGPLv3 or later)\nUse in private queries is {{0}}.\nTo run a command, send \"{{1}} <command>\".\n\"\"\".format(__version__)\nclass Shellbot(IRCBot):\n    def __init__(self, lines, timeout, prefix, queries, user, cwd, **kwargs):\n        super(Shellbot, self).__init__(**kwargs)\n        self.max_lines = lines",
+        "detail": "shellbot",
+        "documentation": {}
+    }
+]
